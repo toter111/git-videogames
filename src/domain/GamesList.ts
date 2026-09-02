@@ -2,13 +2,7 @@ import { Game } from './Game'
 
 export class GamesList {
   private games: Game[] = [
-    new Game(
-      'The Legend of Zelda: Ocarina of Time',
-      1998,
-      'Nintendo',
-      'Adventure',
-      '/zelda-ocarina.jpg',
-    ),
+    new Game('The Legend of Zelda: Ocarina of Time', 1998, 'Nintendo', 'Adventure', '/zelda-ocarina.jpg'),
     new Game('Street Fighter II', 1991, 'Capcom', 'Fighting', '/street-fighter-ii.png'),
     new Game('Super Mario Bros', 1985, 'Nintendo', 'Platformer', '/super-mario-bros.png'),
     new Game('DOOM', 1993, 'id Software', 'FPS', '/doom.jpg'),
@@ -20,7 +14,10 @@ export class GamesList {
   // Si genre es 'All', retornar todos los juegos.
   // Usá el método .filter(x => condición) del array this.games para filtrar por genre.
   filterByGenre(_genre: string): Game[] {
-    return this.games
+    if (_genre == 'All') {
+      return this.games
+    }
+    return this.games.filter((game) => game.genre == _genre);
   }
 
   count(): number {
