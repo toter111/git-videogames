@@ -30,9 +30,9 @@ A platformer is a genre where the player controls a character jumping and climbi
 
 ## Puzzle
 
-<!-- Agregar descripción del género y link a Wikipedia -->
+Los videojuegos de puzles conforman un amplio género que se centra en la resolución de acertijos . Los diferentes tipos de puzles ponen a prueba habilidades para la resolución de problemas, como la lógica, el reconocimiento de patrones, la resolución de secuencias, el reconocimiento espacial y la completación de palabras. [Wikipedia](https://en.wikipedia.org/wiki/Puzzle_video_game)
 
-- Tetris
+- [Tetris](./puzzle/tetris.md)
 
 ## Sandbox
 
